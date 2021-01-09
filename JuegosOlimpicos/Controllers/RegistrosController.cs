@@ -77,7 +77,7 @@ namespace JuegosOlimpicos
                 }
 
             }
-            ViewBag.Message = string.Empty;
+
             ViewData["DeportistaId"] = new SelectList(_context.Deportistas, "Id", "Nombre", registros.DeportistaId);
             ViewData["TipoPruebaId"] = new SelectList(_context.Set<TipoPrueba>(), "Id", "Descripcion", registros.TipoPruebaId);
             return View(registros);
